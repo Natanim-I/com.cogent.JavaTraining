@@ -9,45 +9,41 @@ package com.cogent.day04;
  * @date: Jan 12, 2023
  */
 
-class A{
-	A(){
+class A026{
+	A026(){
 		this(10);
-		System.out.println("DC-A");
+		System.out.println("DC-A026");
 	}
-	A(int i){
-		System.out.println("PC-A");
+	A026(int i){
+		System.out.println("PC-A026");
 	}
 }
 
-class B extends A{
-	B(){
-		this(10);
-		System.out.println("DC-B");
-	}
-	B(int i){
-		System.out.println("PC-B");
+class B026 extends A026{
+	B026(int i){
+		System.out.println("PC-B026");
 	}
 }
 
-class C extends B{
-	C(){
+class C026 extends B026{
+	C026(){
 		this(10,20);
-		System.out.println("DC-C");
-	}
-	C(int i){
 		super(10);
-		System.out.println("PC-C");
+		System.out.println("DC-C026");
 	}
-	C(int i, int j){
+	C026(int i){
+		super(10);
+		System.out.println("PC-C026");
+	}
+	C026(int i, int j){
+		this(10);
 		System.out.println("PC1-C");
 	}
 }
 
 public class Day0401 {
 	public static void main(String[] args) {
-		C c1 = new C(10,20);
-		C c2 = new C(10);
-		C c3 = new C();
+		C026 c = new C026();
 		
 	}
 }
