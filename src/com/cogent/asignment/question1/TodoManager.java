@@ -9,8 +9,8 @@ package com.cogent.asignment.question1;
  * @date: Jan 16, 2023
  */
 public class TodoManager {
-	int taskId;
-	String taskName;
+	private int taskId;
+	private String taskName;
 	
 	public int getTaskId() {
 		return taskId;
